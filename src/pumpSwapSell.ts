@@ -1,4 +1,4 @@
-import { Connection, Keypair, PublicKey } from "@solana/web3.js"
+import { Connection, Keypair, PublicKey, sendAndConfirmTransaction } from "@solana/web3.js"
 import { PumpfunAmm } from "../pumpAmm/pumpAmm_client"
 import { PRIVATE_KEY, RPC_ENDPOINT } from "../constants"
 import { bs58 } from "@coral-xyz/anchor/dist/cjs/utils/bytes"
@@ -13,13 +13,13 @@ export const pumpSwapSell = async () => {
         const payer = Keypair.fromSecretKey(bs58.decode(PRIVATE_KEY))
         console.log("payer: ", payer.publicKey)
         const pumpAmmClient = new PumpfunAmm(connection)
-        const tx = await pumpAmmClient.getSellTx(payer, mint, pool, 100, 0.001)
+        const tx = await pumpAmmClient.getSellTx(payer, mint, pool, 200, 0)
         if (!tx) return
-        console.log("sim:", await connection.simulateTransaction(tx))
-        // const res = await connection.sendRawTransaction(tx.serialize())
-        // if (res) {
-        //     console.log("signature: ", res)
-        // }
+        tx.feePayer = payer.publicKey
+        const res = await sendAndConfirmTransaction(connection, tx, [payer]);
+        if (res) {
+            console.log("signature: ", res)
+        }
     } catch (error) {
         console.log(error)
     }
