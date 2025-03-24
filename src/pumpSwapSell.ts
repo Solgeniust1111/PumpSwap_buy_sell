@@ -11,6 +11,7 @@ export const pumpSwapSell = async () => {
         const pool = new PublicKey("69DPEf311TfFgHzgSukT8hVNtxAgxjMyxQXnUEbqCbeQ")
         const mint = new PublicKey("3SEGgF9BargVkCSugpDSuok8EC4fHiia4SLL2aQgpump")
         const payer = Keypair.fromSecretKey(bs58.decode(PRIVATE_KEY))
+        console.log("payer: ", payer.publicKey)
         const pumpAmmClient = new PumpfunAmm(connection)
         const tx = await pumpAmmClient.getSellTx(payer, mint, pool, 100, 0.001)
         if (!tx) return
