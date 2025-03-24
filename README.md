@@ -14,6 +14,7 @@ Buy tx
 https://solscan.io/tx/3WyuBxEDdu6zijXtmoe6Q8wtms47Q2iQo67oB6AiHSyTvVBAZGHzi1EQiSK5DgNmnGJxgx1mwECqprridRcifPem
 
 Sell tx
+https://solscan.io/tx/2EgygYX2cCDvj5wqXYVVTChbwCXrGzQmFaFXNS2e6BKk4zeUsTP9GPEvtBXtjW7fGabDwmdaD3DGt1mjzReGoixJ
 
 ## Overview
 Now building PumpfunAmm bundler and Copytrading bot
