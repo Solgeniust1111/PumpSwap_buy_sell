@@ -1,18 +1,4 @@
 PRIVATE_KEY=
-RPC_ENDPOINT=
-RPC_WEBSOCKET_ENDPOINT=
-
-SWAP_AMOUNT=0.05             
-DISTRIBUTION_WALLETNUM=20       
-
-JITO_FEE=0.002
-
-TOKEN_NAME="Test token"
-TOKEN_SYMBOL="TT"
-DESCRIPTION="Test token of Testing, lol"
-TOKEN_SHOW_NAME="TT"
-TOKEN_CREATE_ON="yesterday"
-TWITTER="https://x.com/"
-TELEGRAM="https://t.me/"
-WEBSITE="https://google.com"
-FILE="./image/1.jpg"
+RPC_ENDPOINT=https://mainnet.helius-rpc.com/?api-key=
+RPC_WEBSOCKET_ENDPOINT= wss://mainnet.helius-rpc.com/?api-key=
+JITO_FEE = 0.0001
