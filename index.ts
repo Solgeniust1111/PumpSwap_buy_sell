@@ -1,7 +1,7 @@
 
-import { pumpSwapBuy } from "./src/pumpSwapBuy"
-import { pumpSwapSell } from "./src/pumpSwapSell"
-import { pumpSwapCreate } from "./src/pumpSwapCreate"
+import { pumpSwapBuy } from "./src/tx/pumpSwapBuy"
+import { pumpSwapSell } from "./src/tx/pumpSwapSell"
+import { pumpSwapCreate } from "./src/tx/pumpSwapCreate"
 
 const main = async () => {
 

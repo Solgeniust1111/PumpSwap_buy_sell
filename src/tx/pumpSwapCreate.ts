@@ -1,6 +1,4 @@
 import { Connection, Keypair, PublicKey, sendAndConfirmTransaction } from "@solana/web3.js"
-import { PumpfunAmm } from "../pumpAmm/pumpAmm_client"
-import { PRIVATE_KEY, RPC_ENDPOINT } from "../constants"
 import { bs58 } from "@coral-xyz/anchor/dist/cjs/utils/bytes"
 import { createMint } from "@solana/spl-token"
 import {
@@ -15,6 +13,8 @@ import {
     mplTokenMetadata,
 } from "@metaplex-foundation/mpl-token-metadata";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
+import { PRIVATE_KEY, RPC_ENDPOINT } from "../../constants";
+import { PumpfunAmm } from "../../pumpAmm/pumpAmm_client";
 
 export const pumpSwapCreate = async () => {
     try {
