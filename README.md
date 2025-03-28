@@ -19,3 +19,4 @@ https://solscan.io/tx/2EgygYX2cCDvj5wqXYVVTChbwCXrGzQmFaFXNS2e6BKk4zeUsTP9GPEvtB
 ## Overview
 Now building PumpfunAmm bundler and Copytrading bot
 its no problem. Regard good result
+i built rust bot with pumpSwap
